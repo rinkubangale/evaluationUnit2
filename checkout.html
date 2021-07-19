@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+        }
+    
+        .cart{
+            width: 100px;
+            height: 100px;
+            margin-left: 950px;
+        }
+        #data > input{
+            height: 30px;
+            font-size: 30px;
+            margin-left: 450px;
+            margin-top: 200px;
+        }
+        #data > button{
+            height: 30px;
+            font-size: 20px;
+            margin-left: 450px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="icon" src="https://th.bing.com/th/id/R.cb67bad22b18789958ab5339c97e11e9?rik=E2ajBTHVpgXuPg&pid=ImgRaw"
+            onclick="window.location.href ='products.html'" />
+        <img class="cart" src="https://th.bing.com/th/id/OIP.3dozFfqPTg-zg6lBEY7pAgHaGE?pid=ImgDet&rs=1"
+            onclick="window.location.href ='cart.html'" />
+    </div>
+    <div id="data">
+        <input type="text" placeholder="Add Address here..." id="address" /><br/>
+        <button id="payment" onclick="window.location.href = 'payment.html'">Save</button>
+    </div>
+</body>
+</html>

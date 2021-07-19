@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+        }
+        .home{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        #keys > button{
+            margin-left: 500px;
+        }
+        #home > div {
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            padding-left: 500px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .cart{
+            width: 100px;
+            height: 100px;
+            margin-left: 950px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <img class="icon" src="https://th.bing.com/th/id/R.cb67bad22b18789958ab5339c97e11e9?rik=E2ajBTHVpgXuPg&pid=ImgRaw" onclick="window.location.href ='products.html'"/>
+        <img class="cart" src="https://th.bing.com/th/id/OIP.3dozFfqPTg-zg6lBEY7pAgHaGE?pid=ImgDet&rs=1" onclick="window.location.href ='cart.html'"/>
+    </div>
+    <div class="catalogue">
+        <div class="keys">
+        <button onclick="LtoH()">Low To High</button>
+        <button onclick="HtoL()">High To Low</button>
+        <button onclick="AtoZ()">A to Z</button>
+        <button onclick="ZtoA()">Z to A</button>
+        </div>
+        <div id="home"></div>
+    </div>
+</body>
+</html>
+<script src="products.js"></script>
